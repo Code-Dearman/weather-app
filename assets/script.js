@@ -11,23 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navigator.geolocation.getCurrentPosition(function() {
             
             insertLocation()
-
-            // console.log(position);
-            // console.log(position.coords.latitude);
-            // console.log(position.coords.longitude);
         });
     });
 
 });
-
-// if ("geolocation" in navigator) {
-//   console.log("Geolocation is available");
-// } else {
-//   console.log("Geolocation is not available");
-// }
-
-
-// navigator.geolocation.getCurrentPosition(position => {
-//   console.log(position.coords.latitude);
-//   console.log(position.coords.longitude);
-// });
