@@ -11,7 +11,7 @@ function insertLocation() {
         console.log(locationInput.value);
     });
 
-    console.log();
+    console.log("Hello!");
 }
 
 export {insertLocation};

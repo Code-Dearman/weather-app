@@ -1,6 +1,5 @@
 import {insertLocation} from './location_script.js';
 
-console.log('Hello, world!');
 /**
  * This generates the event listeners for the main page of the website.
  */
