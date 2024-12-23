@@ -1,3 +1,17 @@
+
+/* Body */
+body {
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(114,9,121,1) 35%, rgba(0,129,255,1) 100%); 
+}
+
+/* Form */
 .formInput {
     margin: 10px;
+}
+
+/* Headings */
+.pageTitle {
+    color: aliceblue
 }

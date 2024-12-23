@@ -6,12 +6,10 @@ import {insertLocation} from './location_script.js';
 document.addEventListener('DOMContentLoaded', function() {
     let locationButton = document.querySelector('.locationButton');
 
-    locationButton.addEventListener('click', function(x) {
-        console.log('Geolocation is available');
-        navigator.geolocation.getCurrentPosition(function() {
-            
-            insertLocation()
-        });
+    locationButton.addEventListener('click', function(event) {
+
+        event.preventDefault();
+        insertLocation();
     });
 
 });
