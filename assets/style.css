@@ -1,3 +1,12 @@
+/* colour variables */
+:root {
+    --whiteText: #ffffff;
+}
+
+/* Colour classes */
+.whiteText {
+    color: var(--whiteText);
+}
 
 /* Body */
 body {
@@ -12,6 +21,3 @@ body {
 }
 
 /* Headings */
-.pageTitle {
-    color: aliceblue
-}

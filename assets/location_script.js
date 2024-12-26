@@ -4,10 +4,11 @@ export {insertLocation};
 * This function is called by pressing the get my location button.
 * It will insert the user's location into the latitude and logitude input field.
 */
+
 function insertLocation() {
 
-    let latitudeInput = document.querySelector('.latitude');
-    let longitudeInput = document.querySelector('.longitude');
+    let latitudeInput = document.querySelector('.latitudeInput');
+    let longitudeInput = document.querySelector('.longitudeInput');
 
     if (!latitudeInput || !longitudeInput) {
         console.log("Error: Latitude and/or longitude input fields are missing.");
@@ -15,9 +16,7 @@ function insertLocation() {
 
     navigator.geolocation.getCurrentPosition(function(position) {
 
-        console.log(position.coords.latitude);
         latitudeInput.value = position.coords.latitude;
         longitudeInput.value = position.coords.longitude; 
     });
 }
-console.log("Hello!");
