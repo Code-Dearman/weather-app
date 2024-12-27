@@ -24,9 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function(event) {
 
             event.preventDefault();
+            
             let current = document.querySelector('.current');
+            console.log(current);
             let next = current.nextElementSibling;
+
             current.classList.remove('current');
+            current.classList.add('hidden');
+
+            next.classList.remove('hidden');
             next.classList.add('current');
         });
     });
@@ -34,6 +40,21 @@ document.addEventListener('DOMContentLoaded', function() {
     /**
      * Event listener for the previous button on the main page.
      */
+    let previousButton = document.querySelectorAll('.prevButton');
+    previousButton.forEach(function(button) {
+        button.addEventListener('click', function(event) {
 
+            event.preventDefault();
+
+            let current = document.querySelector('.current');
+            let previous = current.previousElementSibling;
+
+            current.classList.remove('current');
+            current.classList.add('hidden');
+
+            previous.classList.remove('hidden');
+            previous.classList.add('current');
+        });
+    });
 
 });

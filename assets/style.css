@@ -1,11 +1,16 @@
 /* colour variables */
 :root {
     --whiteText: #ffffff;
+    --blackText: #000000;
 }
 
 /* Colour classes */
 .whiteText {
     color: var(--whiteText);
+}
+
+.blackText {
+    color: var(--blackText);
 }
 
 /* Body */
@@ -21,3 +26,21 @@ body {
 }
 
 /* Headings */
+
+
+/* Input Cards */
+.inputPage {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    height: 500px;
+}
+
+/* Pagination Classes */
+.current {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
