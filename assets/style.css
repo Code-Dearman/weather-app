@@ -8,8 +8,6 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-  
-
 
 
 /* colour variables */
@@ -18,14 +16,17 @@ body {
     --blackText: #000000;
 }
 
+
 /* Colour classes */
 .whiteText {
     color: var(--whiteText);
 }
 
+
 .blackText {
     color: var(--blackText);
 }
+
 
 /* Body */
 /* body {
@@ -33,6 +34,7 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(114,9,121,1) 35%, rgba(0,129,255,1) 100%); 
 } */
+
 
 /* Form */
 .formInput {
@@ -48,6 +50,7 @@ body {
     border: 3px solid #000000;
     border-radius: 10px;
     height: 500px;
+    position: relative;
 }
 
 /* Pagination Classes */
@@ -57,4 +60,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+/* Button Classes */
+.nextButton {
+    position: absolute;
+    bottom: 0;
 }

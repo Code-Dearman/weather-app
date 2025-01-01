@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatWeather?</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Electrolize&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Main style sheet -->
     <link rel="stylesheet" href="assets/style.css">
 
@@ -25,14 +32,16 @@
                 <form action="">
 
                     <div class="inputPage current">
-                        <h3 class="text-center blackText">Page 1</h3>
-                        <input type="text" placeholder="Location" class="locationInput formInput">
+                        <h3 class="text-center blackText p-2">Step One: <br> Chose your location</h3>
+                        <label for="locationInput" class="text-center m-2">Enter your location...</label>
+                        <input type="text" placeholder="Location" class="locationInput formInput" id="locationInput">
                         <br>
                         <input type="text" placeholder="Latitude" class="latitudeInput formInput">
                         <input type="text" placeholder="Longitude" class="longitudeInput formInput">
-                        <button class="locationButton">Press Me!</button>
                         <br>
-                        <button class="myButtons nextButton">Next</button>
+                        <button class="locationButton mx-auto">Press Me!</button>
+                        <br>
+                        <button class="myButtons nextButton m-2">Next</button>
                     </div>
 
                     <div class="inputPage hidden">
